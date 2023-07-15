@@ -1,8 +1,18 @@
 package com.pratyush.springbootrestapi.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
+@Id
 private long id;
+@Column
 private String title;
+@Column
 private String description;
 public Course(long id, String title, String description) {
 	super();
